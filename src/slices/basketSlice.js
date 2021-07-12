@@ -22,6 +22,9 @@ export const basketSlice = createSlice({
       }
       state.items=newCart
     },
+    clearBasket: (state, action) => {
+      state.items = [];
+  },
   },
 });
 
